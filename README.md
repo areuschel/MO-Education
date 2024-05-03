@@ -1,2 +1,2 @@
-# MO-PCA-MANOVA
+# MO-Education
 Multivariate analysis of Missouri High Schools using Principal Components Analysis and MANOVA.
