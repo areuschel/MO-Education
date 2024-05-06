@@ -25,10 +25,14 @@ The data for this project was obtained through the Missouri Department of Educat
 
 4. Caveats
 - <b>Some schools report 100% of students qualify for Free and Reduced Lunch</b>
-  - Schools can qualify 100% if a high enough proportion are direct certified
+  - schools can qualify 100% if a high enough proportion are direct certified
   - link to eligibility guidelines: https://dese.mo.gov/financial-admin-services/food-nutrition-services/community-eligibility-provisiocep 
 - <b>Special education schools had to be removed because of reporting differences</b>
 - <b>Low-enrollment schools sometimes had to be removed due to not having enough students to compute state standardized metrics</b>
+- <b>Social Studies and History subjects are accounted for less than ELA, Math, and Science</b>
+  - adjustments for school capacity such as offering government every other year
+
+
 
 ### Dataset Dilemma: Sacrifice Sample Size or Demographic Info?
 
