@@ -18,7 +18,7 @@ The data for this project was obtained through the Missouri Department of Educat
 
 ### Data Cleaning
 1. Narrow focus of analysis to only 4-year high schools
-[Cleaning1](/cleaning_select_hs.png?raw=true "Clean")
+![Cleaning1](/cleaning_select_hs.png?raw=true "Clean")
 
   
 2. Inspect null values
@@ -40,8 +40,8 @@ The data for this project was obtained through the Missouri Department of Educat
 
 
 ### Description of Variables: Cleaned Dataset
-![Mod1](/311-Mod1.jpg?raw=true "Mod")
-![Mod1](/311-Mod1.jpg?raw=true "Mod")
+![Desc](/var_desc_1.png?raw=true "Vars")
+![Desc](/var_desc_2.png?raw=true "Vars")
 
 
 
