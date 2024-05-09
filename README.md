@@ -13,14 +13,16 @@ The goal of this project is to utilize multivariate statistical techniques to te
 <h2>Project walk-through:</h2>
 
 ### Gathering the Data
-The data for this project was obtained through the Missouri Department of Education’s online Comprehensive Data System (MCDS). Three different datasets were combined to increase the number of variables and scope of analysis. I am working primarily off of the 2023 Supporting Building Report data from MCDS (link: https://apps.dese.mo.gov/MCDS/home.aspx) and adding columns from "free and reduced lunch, 2023" and "per pupil expenditures, 2023".
+The data for this project was obtained through the Missouri Department of Education’s online Comprehensive Data System (MCDS). Three different datasets were combined to increase the number of variables and scope of analysis. I am working primarily off of the 2023 Supporting Building Report data from MCDS (link: https://apps.dese.mo.gov/MCDS/home.aspx) and adding columns from Free and Reduced Lunch Percentage (2023) and Per Pupil Expenditures (2023).
 
 
 ### Data Cleaning
 1. Narrow focus of analysis to only 4-year high schools
+![Mod1](/311-Mod1.jpg?raw=true "Mod")
 
   
 2. Inspect null values
+![Mod1](/311-Mod1.jpg?raw=true "Mod")
 
 
 4. Caveats
@@ -38,6 +40,8 @@ The data for this project was obtained through the Missouri Department of Educat
 
 
 ### Description of Variables: Cleaned Dataset
+![Mod1](/311-Mod1.jpg?raw=true "Mod")
+![Mod1](/311-Mod1.jpg?raw=true "Mod")
 
 
 
