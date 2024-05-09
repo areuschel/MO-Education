@@ -18,28 +18,53 @@ The data for this project was obtained through the Missouri Department of Educat
 
 ### Data Cleaning
 1. Narrow focus of analysis to only 4-year high schools
+   
 ![Cleaning1](/cleaning_select_hs.png?raw=true "Clean")
 
   
 2. Inspect null values
-   - count of null values per column: full data 
-![Mod1](/311-Mod1.jpg?raw=true "Mod")
-   - count of null values per column: after removing 7 schools
-     - 3/7 are special education schools and 4/7 are low enough enrollment that the state doesn't compute standard metrics
+- <b>columns with null values and the number of occurances</b>
+     
+![Nulls](/proportion_null_1.png?raw=true "Nulls")
+
+   - columns and the number of occurances AFTER removing schools with 8 or more total null values across all columns
+   - NOTE: social studies categories have been removed due to over half of their observations being missing
+     
+![Nulls](/proportion_null_2.png?raw=true "Nulls")
+
 
 
 4. Caveats
 - <b>Some schools report 100% of students qualify for Free and Reduced Lunch</b>
-  - schools can qualify 100% if a high enough proportion are direct certified
+  - schools can qualify 100% if a high enough proportion of students are direct certified
   - link to eligibility guidelines: https://dese.mo.gov/financial-admin-services/food-nutrition-services/community-eligibility-provisiocep 
 - <b>Special education schools had to be removed because of reporting differences</b>
 - <b>Low-enrollment schools sometimes had to be removed due to not having enough students to compute state standardized metrics</b>
-- <b>Social Studies and History subjects are accounted for less than ELA, Math, and Science</b>
-  - adjustments for school capacity such as offering government every other year
+- <b>Social Studies and History subjects are not accounted for as much as ELA, Math, and Science</b>
+  - this can be explained through potential adjustments for school capacity
+    - a common example of this is offering government every other year
 
 
 
 ### Dataset Dilemma: Sacrifice Sample Size or Demographic Info?
+
+Most of the remaining null values are in "SG" categories, referring to minority students (learning disabilities, minorities, ESL students, etc.). In order to deal with the remaining missing values, I considered two options.
+
+####  Option #1: Remove SG Growth Columns 
+
+✅ Pros = keeps sample size high
+
+🛑 Cons = reduces dimensionality by 3, excludes interesting angle for analysis 
+
+####  Option #2: Remove Remaining Rows (Schools) with Null Values 
+
+✅ Pros = keeps dimensionality high, includes student groups
+
+🛑 Cons = excludes 60 high schools from analysis
+
+#### My Choice
+
+I chose Option #2 that includes student group growth data. I decided that I would rather keep the student group columns and sacrifice some of the sample size because I think this is a really important piece of information for schools to look at. Schools often look toward programs where ESL and other minority students perform well. I still have n = 239 high schools with 32 total columns in my df. The high number of dimensions is suitable for Principal Components Analysis (PCA).
 
 
 ### Description of Variables: Cleaned Dataset
@@ -51,8 +76,18 @@ The data for this project was obtained through the Missouri Department of Educat
 ### MANOVA
 
 Assumptions:
-- <b>Independence between observations</b> 
+- <b>Independence between observations</b>
+  - ✅
 - <b>Multivariate Normality</b>
+
+Royston's Test for Multivariate Normality
+![Desc](/var_desc_1.png?raw=true "Vars")
+
+Anderson-Darling's Test for Univariate Normality
+![Desc](/var_desc_1.png?raw=true "Vars")
+
+
+
 - <b>Absence of multicollinearity</b>
 
 ### Principal Components Analysis (PCA)
