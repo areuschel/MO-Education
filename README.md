@@ -22,7 +22,10 @@ The data for this project was obtained through the Missouri Department of Educat
 
   
 2. Inspect null values
+   - count of null values per column: full data 
 ![Mod1](/311-Mod1.jpg?raw=true "Mod")
+   - count of null values per column: after removing 7 schools
+     - 3/7 are special education schools and 4/7 are low enough enrollment that the state doesn't compute standard metrics
 
 
 4. Caveats
