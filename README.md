@@ -73,18 +73,20 @@ I chose Option #2 that includes student group growth data. I decided that I woul
 
 
 
-### MANOVA
+### MANOVA: Multivariate Analysis Of Variance
 
-Assumptions:
+#### Assumptions:
 - <b>Independence between observations</b>
   - ✅
 - <b>Multivariate Normality</b>
 
-Royston's Test for Multivariate Normality
-![Desc](/var_desc_1.png?raw=true "Vars")
+Royston's Test for Multivariate Normality ❌
+     
+![Norm](/mvn_normality_roy.png?raw=true "Test")
 
-Anderson-Darling's Test for Univariate Normality
-![Desc](/var_desc_1.png?raw=true "Vars")
+Anderson-Darling's Test for Univariate Normality ❌✅
+
+![Norm](/univariate_normality_anderson.png?raw=true "Test")
 
 
 
