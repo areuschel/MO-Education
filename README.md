@@ -119,8 +119,32 @@ note: only five of these appear to be extreme outliers (8, 300, 221, 146, 132) a
 moving forward each method will be tested with and without these 5 schools to see if their removal is essential to interpretation
 
 
+### Full Model
+
+1. Number of principal componenets
+
+![scree](/scree_pca1.png?raw=true "PCA")
+
+2. Proportion of variance explained
+   - 
+3. Biplot, PC1-PC2
+
+![biplot](/biplot_pca1.png?raw=true "PCA")
+
+   
+
+### Model without outliers
+
+This model produced results nearly indentical to the full model, thus they are not described here. Documentation in the R code shows full comparison of these two models.
+
+### Subsetting by % Free and Reduced Lunch
+
+One of my original questions about student performance among Missouri high schools was on the effect of wealth/nourishment through the given Free and Reduced Lunch (FRL) metric. Due to the assumptions of MANOVA being violated, I could not run that multivariate test. I chose to subset my cleaned dataset by schools with 50% or more qualifying for FRL and one for less than 50%.
+
+1. Number of principal components
+2. Proportion of variance explained
+3. Biplot
+
+### Interpretations
 
 
-picture notation:
-------------------
-![Mod1](/311-Mod1.jpg?raw=true "Mod")
