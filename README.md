@@ -169,7 +169,7 @@ One of my original questions about student performance among Missouri high schoo
 
 🎖 TOTAL: 79.0% 
 
-3. Biplot
+3. Biplot, PC1-PC2
 
 ![scree](/biplot_low_FRL.png?raw=true "PCA")
 
@@ -192,7 +192,7 @@ One of my original questions about student performance among Missouri high schoo
 
 🎖 TOTAL: 72.2% 
 
-3. Biplot
+3. Biplot, PC1-PC2
 
 ![scree](/biplot_high_FRL.png?raw=true "PCA")
 
@@ -203,6 +203,15 @@ One of my original questions about student performance among Missouri high schoo
 ![scree](/biplot_comparison.png?raw=true "PCA")
 
 ![scree](/pca_interpretations.png?raw=true "PCA")
+
+### Future work and considerations
+
+- Canonical Correlation Analysis
+   - This method could potentially identify relationships between performance metrics and demographic makeup
+- K-means clustering
+   - The PCA's provided are a good basis for identifying schools similar to each other based on size and performance
+- Univariate Tests
+   - There were a handful of univariate normal variables... this wasn't the focus of my project, but could be interesting to test on a univariate level to supplement with multivariate findings
 
 
 
