@@ -115,6 +115,8 @@ note: quadratic, square root, and log transformations were unsuccessful for all 
    - ❌✅
  
 ![MVN](/mvn_outliers.png?raw=true "Mahalanobis")
+note: only five of these appear to be extreme outliers (8, 300, 221, 146, 132) and that is not a horrible violation of this assumption;
+moving forward each method will be tested with and without these 5 schools to see if their removal is essential to interpretation
 
 
 
