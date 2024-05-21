@@ -1,31 +1,32 @@
 #### The Dataset
-
+'''
 I am working primarily off of the 2023 Supporting Building Report data from
 the Missouri Ed Data Portal: https://apps.dese.mo.gov/MCDS/home.aspx
 - adding cols from:
   * free and reduced lunch, 2023
 * per pupil expenditures, 2023
+'''
 
-Load Packages
-```{r}
+#Load Packages
+
 library(tidyverse)
 library(factoextra)
 library(broom)
 library(janitor)
 library(MVN)
 library(ggcorrplot)
-```
+
 
 #### Data Cleaning
 
 # load datasets
 
 # performance metrics
-building <- read.csv("/Users/areuschel/Desktop/STAT388/Project_1/Building_rep.csv")
+building <- read.csv("/your_path_here")
 # building costs and total enrollment 
-pupil <- read.csv("/Users/areuschel/Desktop/STAT388/Project_1/Pupil_exp.csv")
+pupil <- read.csv("/your_path_here")
 # % of students on Free and Reduced lunches
-lunch <- read.csv("/Users/areuschel/Desktop/STAT388/Project_1/Free_red.csv")
+lunch <- read.csv("/your_path_here")
 
 # keep only necessary columns's from building
 building <- building %>% select(COUNTY_DISTRICT_CODE, DISTRICT_NAME, SCHOOL_CODE,
