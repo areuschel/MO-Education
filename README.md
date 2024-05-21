@@ -1,5 +1,5 @@
 # MO-Education
-Multivariate analysis of Missouri High Schools using Principal Components Analysis and MANOVA.
+Multivariate analysis of Missouri High Schools using Principal Components Analysis.
 
 <h2>Description</h2>
 The goal of this project is to utilize multivariate statistical techniques to test preconceived assumptions about educational performance between schools with varying student demographics as well as reveal new insights about student learning. Multivariate methods provide us a way to view many different dimensions of learning (in-class learning, at-home learning, school financial resources, demographics, etc.) and interpret how those can all be related to student success. 
@@ -34,7 +34,7 @@ The data for this project was obtained through the Missouri Department of Educat
 
 
 
-4. Caveats
+3. Caveats
 - <b>Some schools report 100% of students qualify for Free and Reduced Lunch</b>
   - schools can qualify 100% if a high enough proportion of students are direct certified
   - link to eligibility guidelines: https://dese.mo.gov/financial-admin-services/food-nutrition-services/community-eligibility-provisiocep 
@@ -52,15 +52,15 @@ Most of the remaining null values are in "SG" categories, referring to minority 
 
 ####  Option #1: Remove SG Growth Columns 
 
-✅ Pros = keeps sample size high
+✅  Pros = keeps sample size high
 
-🛑 Cons = reduces dimensionality by 3, excludes interesting angle for analysis 
+🛑  Cons = reduces dimensionality by 3, excludes interesting angle for analysis 
 
 ####  Option #2: Remove Remaining Rows (Schools) with Null Values 
 
-✅ Pros = keeps dimensionality high, includes student groups
+✅  Pros = keeps dimensionality high, includes student groups
 
-🛑 Cons = excludes 60 high schools from analysis
+🛑  Cons = excludes 60 high schools from analysis
 
 #### My Choice
 
@@ -75,31 +75,47 @@ I chose Option #2 that includes student group growth data. I decided that I woul
 
 ### MANOVA: Multivariate Analysis Of Variance
 
+The first thing I wanted to try with my data was MANOVA. I created groups for comparison using school enrollment size (big v. small schools) and % of student population qualifying for Free and Reduced Lunches. These seemed like good starting points to check if there were major performance differences based on these variables that represent wealth and capacity of schools.
+
+
 #### Checking MANOVA Assumptions:
 - <b>Independence between observations</b>
   - ✅
 - <b>Multivariate Normality</b>
+   - ❌
 
-Royston's Test for Multivariate Normality ❌
+Royston's Test for Multivariate Normality
      
 ![Norm](/mvn_normality_roy.png?raw=true "Test")
 
-Anderson-Darling's Test for Univariate Normality ❌✅
+Anderson-Darling's Test for Univariate Normality
 
 ![Norm](/univariate_normality_anderson.png?raw=true "Test")
+note: quadratic, square root, and log transformations were unsuccessful for all variables which failed the Anderson-Darling Test
 
 
 - <b>Absence of multicollinearity</b>
+   - ❌✅
+
+![Cor](/cor_heatmap_1.png?raw=true "Heatmap")
+
+
 
 
 ### Principal Components Analysis (PCA)
 
 #### Checking PCA Assumptions:
-- <b>Continuous variables</b> 
+- <b>Continuous variables</b>
+   - ✅
 - <b>Linear relationships between variables</b>
+   - ✅
 - <b>High sample size</b>
-- <b>Continuous variables</b> 
-- <b>No significant outliers</b> 
+   - ✅
+- <b>No significant outliers</b>
+   - ❌✅
+ 
+![MVN](/mvn_outliers.png?raw=true "Mahalanobis")
+
 
 
 
