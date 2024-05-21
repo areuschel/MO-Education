@@ -23,12 +23,12 @@ The data for this project was obtained through the Missouri Department of Educat
 
   
 2. Inspect null values
-- <b>columns with null values and the number of occurances</b>
+- columns with null values and the number of occurances
      
 ![Nulls](/proportion_null_1.png?raw=true "Nulls")
 
    - columns and the number of occurances AFTER removing schools with 8 or more total null values across all columns
-   - NOTE: social studies categories have been removed due to over half of their observations being missing
+      - NOTE: social studies categories have been removed due to over half of their observations being missing
      
 ![Nulls](/proportion_null_2.png?raw=true "Nulls")
 
@@ -75,7 +75,7 @@ I chose Option #2 that includes student group growth data. I decided that I woul
 
 ### MANOVA: Multivariate Analysis Of Variance
 
-#### Assumptions:
+#### Checking MANOVA Assumptions:
 - <b>Independence between observations</b>
   - ✅
 - <b>Multivariate Normality</b>
@@ -89,12 +89,12 @@ Anderson-Darling's Test for Univariate Normality ❌✅
 ![Norm](/univariate_normality_anderson.png?raw=true "Test")
 
 
-
 - <b>Absence of multicollinearity</b>
+
 
 ### Principal Components Analysis (PCA)
 
-Assumptions:
+#### Checking PCA Assumptions:
 - <b>Continuous variables</b> 
 - <b>Linear relationships between variables</b>
 - <b>High sample size</b>
