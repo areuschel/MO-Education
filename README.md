@@ -121,13 +121,23 @@ moving forward each method will be tested with and without these 5 schools to se
 
 ### Full Model
 
-1. Number of principal componenets
+1. Number of principal componenets = 4
 
 ![scree](/scree_pca1.png?raw=true "PCA")
 
 2. Proportion of variance explained
-   - 
-3. Biplot, PC1-PC2
+
+   PC1: 38.6%
+
+   PC2: 17.9%
+
+   PC3: 12.4%
+
+   PC4: 6.3%
+
+🎖 TOTAL: 75.2% 
+
+4. Biplot, PC1-PC2
 
 ![biplot](/biplot_pca1.png?raw=true "PCA")
 
@@ -141,10 +151,59 @@ This model produced results nearly indentical to the full model, thus they are n
 
 One of my original questions about student performance among Missouri high schools was on the effect of wealth/nourishment through the given Free and Reduced Lunch (FRL) metric. Due to the assumptions of MANOVA being violated, I could not run that multivariate test. I chose to subset my cleaned dataset by schools with 50% or more qualifying for FRL and one for less than 50%.
 
-1. Number of principal components
+### PCA, <50% qualifying for FRL (💰 higher income)
+
+1. Number of principal components = 4
+
+![scree](/scree_low_FRL.png?raw=true "PCA")
+
 2. Proportion of variance explained
+
+   PC1: 35.7%
+
+   PC2: 23.0%
+
+   PC3: 12.6%
+
+   PC4: 7.7%
+
+🎖 TOTAL: 79.0% 
+
 3. Biplot
 
+![scree](/biplot_low_FRL.png?raw=true "PCA")
+
+
+### PCA, >50% qualifying for FRL (💰 lower income)
+
+1. Number of principal components = 4
+
+![scree](/scree_high_FRL.png?raw=true "PCA")
+
+2. Proportion of variance explained
+
+   PC1: 39.3%
+
+   PC2: 17.4%
+
+   PC3: 8.9%
+
+   PC4: 6.6%
+
+🎖 TOTAL: 72.2% 
+
+3. Biplot
+
+![scree](/biplot_high_FRL.png?raw=true "PCA")
+
+
+
 ### Interpretations
+
+![scree](/biplot_comparison.png?raw=true "PCA")
+
+![scree](/pca_interpretations.png?raw=true "PCA")
+
+
 
 
