@@ -2,7 +2,7 @@
 Multivariate analysis of Missouri High Schools using Principal Components Analysis and MANOVA.
 
 <h2>Description</h2>
-The goal of this project is to utilize multivariate statistical techniques to test preconceived assumptions about educational performance between schools with varying student demographics as well as reveal new insights about student learning. Multivariate methods provide us a way to view many different dimensions of learning (in-class learning, at-home learning, school financial resources, demographics, etc.) and interpret how those can all be related to student success. I chose to look at Missouri because (1) I grew up in Missouri and attended the same school district for my K-12 education; and (2) I have personal ties to public school teachers and administrators in Missouri that were able to help me decipher the meaning behind many of the variables in my dataset and direct the focus of this project.
+The goal of this project is to utilize multivariate statistical techniques to test preconceived assumptions about educational performance between schools with varying student demographics as well as reveal new insights about student learning. Multivariate methods provide us a way to view many different dimensions of learning (in-class learning, at-home learning, school financial resources, demographics, etc.) and interpret how those can all be related to student success. 
 
 <h2>Languages and Utilities Used</h2>
 
