@@ -2,7 +2,7 @@
 Multivariate analysis of Missouri High Schools using Principal Components Analysis.
 
 <h2>Description</h2>
-The goal of this project is to utilize multivariate statistical techniques to test preconceived assumptions about educational performance between schools with varying student demographics as well as reveal new insights about student learning. Multivariate methods provide us a way to view many different dimensions of learning (in-class learning, at-home learning, school financial resources, demographics, etc.) and interpret how those can all be related to student success. 
+This project aims to use multivariate statistical techniques to evaluate assumptions and uncover new insights about educational performance across schools with diverse student demographics. By analyzing multiple dimensions, such as in-class learning, at-home learning, school resources, and demographics, we can better understand their combined impact on student success.
 
 <h2>Languages and Utilities Used</h2>
 
