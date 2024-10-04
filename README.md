@@ -1,4 +1,6 @@
 # MO-Education
+![missouri](/mo_nature.jpg?raw=true "Clean")
+
 Multivariate analysis of Missouri High Schools using Principal Components Analysis
 
 <h2>Description</h2>
@@ -216,7 +218,9 @@ One of my original questions about student performance among Missouri high schoo
 
 ![scree](/pca_interpretations.png?raw=true "PCA")
 
-### Future work and considerations
+# Future work and considerations
+![beauty](/even_mo_nature.jpg?raw=true "Clean")
+
 
 - Canonical Correlation Analysis
    - This method could potentially identify relationships between performance metrics and demographic makeup
