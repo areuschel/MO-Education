@@ -28,6 +28,7 @@ The data for this project was obtained through the Missouri Department of Educat
 
   
 ✂️ I decided to remove individual schools with 8 or more total null values.
+
 ✂️ I also removed social studies categories due to more than 50% of the data being missing for all testing groups. 
 
 #### A new look at the remaining null values
@@ -36,16 +37,25 @@ The data for this project was obtained through the Missouri Department of Educat
 
 
 
-3. Caveats
-- <b>Some schools report 100% of students qualify for Free and Reduced Lunch</b>
-  - schools can qualify 100% if a high enough proportion of students are direct certified
-  - link to eligibility guidelines: https://dese.mo.gov/financial-admin-services/food-nutrition-services/community-eligibility-provisiocep 
-- <b>Special education schools had to be removed because of reporting differences</b>
-- <b>Low-enrollment schools sometimes had to be removed due to not having enough students to compute state standardized metrics</b>
-- <b>Social Studies and History subjects are not accounted for as much as ELA, Math, and Science</b>
-  - this can be explained through potential adjustments for school capacity
-    - a common example of this is offering government every other year
+### Other considerations
 
+📙 Several schools report 100% of students qualify for Free and Reduced Lunch
+
+  - schools can qualify 100% if a high enough proportion of students are direct certified
+  - link to eligibility guidelines: https://dese.mo.gov/financial-admin-services/food-nutrition-services/community-eligibility-provisiocep
+    
+📙 Special education schools were not considered in this analysis for large proportion of null values in selected variables 
+
+📒 Low-enrollment schools did not have enough students to compute state standardized metrics are also not considered<b>
+
+📓 <b> Social Studies and History subjects are not accounted for as much as ELA, Math, and Science </b>
+
+   ✅ Potential explanation: school capacity
+   
+   - some high schools only offer social studies subjects such as government every other year
+   - this could impact the way these subjects are reported in my sample
+
+![dash](/modashy.JPEG?raw=true "Nulls")
 
 
 ### Dataset Dilemma: Sacrifice Sample Size or Demographic Info?
