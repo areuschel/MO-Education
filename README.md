@@ -48,37 +48,37 @@ The data for this project was obtained through the Missouri Department of Educat
     
 📙 Special education schools were not considered in this analysis for large proportion of null values in selected variables 
 
-📒 Low-enrollment schools did not have enough students to compute state standardized metrics are also not considered<b>
+📒 Low-enrollment schools did not have enough students to compute state standardized metrics are also not considered
 
-📓 <b> Social Studies and History subjects are not accounted for as much as ELA, Math, and Science </b>
+📓 Social Studies and History subjects are not accounted for as much as ELA, Math, and Science
 
    ✅ Potential explanation: school capacity
    
    - some high schools only offer social studies subjects such as government every other year
    - this could impact the way these subjects are reported in my sample
 
-![dash](/modashy.JPEG?raw=true "Nulls")
-
 
 ### Dataset Dilemma: Sacrifice Sample Size or Demographic Info?
 
-Most of the remaining null values are in "SG" categories, referring to minority students (learning disabilities, minorities, ESL students, etc.). In order to deal with the remaining missing values, I considered two options.
+Most of the remaining null values are in "SG" categories, referring to certain student groups (such as students with learning disabilities and ESL students). In order to deal with the remaining missing values, I considered two options.
 
-####  Option #1: Remove SG Growth Columns 
+Option #1: Remove SG Growth Columns 
 
-✅  Pros = keeps sample size high
+   ✅  Pros = keeps sample size high
 
-🛑  Cons = reduces dimensionality by 3, excludes interesting angle for analysis 
+   🛑  Cons = reduces dimensionality by 3, excludes interesting angle for analysis 
 
-####  Option #2: Remove Remaining Rows (Schools) with Null Values 
+Option #2: Remove Remaining Rows (Schools) with Null Values 
 
-✅  Pros = keeps dimensionality high, includes student groups
+   ✅  Pros = keeps dimensionality high, includes student groups
 
-🛑  Cons = excludes 60 high schools from analysis
+   🛑  Cons = excludes 60 high schools from analysis
 
 #### My Choice
 
-I chose Option #2 that includes student group growth data. I decided that I would rather keep the student group columns and sacrifice some of the sample size because I think this is a really important piece of information for schools to look at. Schools often look toward programs where ESL and other minority students perform well. I still have n = 239 high schools with 32 total columns in my df. The high number of dimensions is suitable for Principal Components Analysis (PCA).
+I chose Option #2 that includes student group growth data. 
+
+I decided that I would rather keep the student group columns and sacrifice some of the sample size because I think this is a really important piece of information for schools to look at. Schools often look toward programs where ESL and other minority students perform well. I still have n = 239 high schools with 32 total columns in my df. The high number of dimensions is suitable for Principal Components Analysis (PCA).
 
 
 ### Description of Variables: Cleaned Dataset
@@ -89,7 +89,7 @@ I chose Option #2 that includes student group growth data. I decided that I woul
 
 ### MANOVA: Multivariate Analysis Of Variance
 
-The first thing I wanted to try with my data was MANOVA. I created groups for comparison using school enrollment size (big v. small schools) and % of student population qualifying for Free and Reduced Lunches. These seemed like good starting points to check if there were major performance differences based on these variables that represent wealth and capacity of schools.
+The first thing I wanted to try with my data was MANOVA. I created groups for comparison using school enrollment size (big v. small schools) and % of student population qualifying for Free and Reduced Lunches. These seemed like good starting points to check if there were major performance differences based on these variables that represent socioeconomic environment and size of schools.
 
 
 #### Checking MANOVA Assumptions:
@@ -105,7 +105,7 @@ Royston's Test for Multivariate Normality
 Anderson-Darling's Test for Univariate Normality
 
 ![Norm](/univariate_normality_anderson.png?raw=true "Test")
-note: quadratic, square root, and log transformations were unsuccessful for all variables which failed the Anderson-Darling Test
+   note: quadratic, square root, and log transformations were unsuccessful for all variables which failed the Anderson-Darling Test
 
 
 - <b>Absence of multicollinearity</b>
@@ -113,7 +113,9 @@ note: quadratic, square root, and log transformations were unsuccessful for all 
 
 ![Cor](/cor_heatmap_1.png?raw=true "Heatmap")
 
+#### Moving on
 
+With both normality and multicollinearity violations, I decided not to move forward with this method. 
 
 
 ### Principal Components Analysis (PCA)
