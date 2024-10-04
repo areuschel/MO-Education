@@ -1,14 +1,18 @@
 # MO-Education
-Multivariate analysis of Missouri High Schools using Principal Components Analysis.
+Multivariate analysis of Missouri High Schools using Principal Components Analysis
 
 <h2>Description</h2>
-This project aims to use multivariate statistical techniques to evaluate assumptions and uncover new insights about educational performance across schools with diverse student demographics. By analyzing multiple dimensions, such as in-class learning, at-home learning, school resources, and demographics, we can better understand their combined impact on student success.
+This project uses multivariate statistics to identify key differences in educational performance across high schools in Missouri, analyzing factors like reported student growth, socioeconomic data at the school and district levels, and several other school population demographics.
+
 
 <h2>Languages and Utilities Used</h2>
 
 - <b>RStudio</b> 
 - <b>tidyverse</b>
-- <b>factoextra</b>
+- <b>Hmisc</b>
+- <b>ClustOfVar</b>
+- <b>nsprcomp</b>
+- <b>janitor</b>
 
 <h2>Project walk-through:</h2>
 
