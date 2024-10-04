@@ -20,21 +20,19 @@ This project uses multivariate statistics to identify key differences in educati
 The data for this project was obtained through the Missouri Department of Education’s online Comprehensive Data System (MCDS). Three different datasets were combined to increase the number of variables and scope of analysis. I am working primarily off of the 2023 Supporting Building Report data from MCDS (link: https://apps.dese.mo.gov/MCDS/home.aspx) and adding columns from Free and Reduced Lunch Percentage (2023) and Per Pupil Expenditures (2023).
 
 
-### Data Cleaning
+### Preprocessing 
 1. Narrow focus of analysis to only 4-year high schools
+2. Inspect count of null values & variable name
    
-![Cleaning1](/cleaning_select_hs.png?raw=true "Clean")
+![Cleaning1](/preprocess_01.jpg?raw=true "Clean")
 
   
-2. Inspect null values
-- columns with null values and the number of occurances
-     
-![Nulls](/proportion_null_1.png?raw=true "Nulls")
+✂️ I decided to remove individual schools with 8 or more total null values.
+✂️ I also removed social studies categories due to more than 50% of the data being missing for all testing groups. 
 
-   - columns and the number of occurances AFTER removing schools with 8 or more total null values across all columns
-      - NOTE: social studies categories have been removed due to over half of their observations being missing
+#### A new look at the remaining null values
      
-![Nulls](/proportion_null_2.png?raw=true "Nulls")
+![Nulls](/preprocess_02.jpg?raw=true "Nulls")
 
 
 
