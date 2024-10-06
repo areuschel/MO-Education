@@ -185,14 +185,13 @@ One of my original questions about student performance among Missouri high schoo
 
 3. Biplot, PC1-PC2
 
-![scree](/biplot_low_FRL.png?raw=true "PCA")
 
 
 ### PCA, >50% qualifying for FRL (💰 lower income)
 
-1. Number of principal components = 4
+![scree](/FRL_high.JPEG?raw=true "PCA")
 
-![scree](/scree_high_FRL.png?raw=true "PCA")
+1. Number of principal components = 4
 
 2. Proportion of variance explained
 
@@ -206,9 +205,6 @@ One of my original questions about student performance among Missouri high schoo
 
 🎖 TOTAL: 72.2% 
 
-3. Biplot, PC1-PC2
-
-![scree](/biplot_high_FRL.png?raw=true "PCA")
 
 
 
