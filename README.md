@@ -167,9 +167,9 @@ One of my original questions about student performance among Missouri high schoo
 
 ### PCA, <50% qualifying for FRL (💰 higher income)
 
-1. Number of principal components = 4
+![scree](/FRL_low.JPEG?raw=true "PCA")
 
-![scree](/scree_low_FRL.png?raw=true "PCA")
+1. Number of principal components = 4
 
 2. Proportion of variance explained
 
