@@ -135,9 +135,9 @@ moving forward each method will be tested with and without these 5 schools to se
 
 ### Full Model
 
-1. Number of principal componenets = 4
+![scree](/full_mod.JPEG?raw=true "PCA")
 
-![scree](/scree_pca1.png?raw=true "PCA")
+1. Number of principal componenets = 4
 
 2. Proportion of variance explained
 
@@ -151,9 +151,7 @@ moving forward each method will be tested with and without these 5 schools to se
 
 🎖 TOTAL: 75.2% 
 
-4. Biplot, PC1-PC2
-
-![biplot](/biplot_pca1.png?raw=true "PCA")
+3. Biplot, PC1-PC2
 
    
 
