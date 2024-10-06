@@ -41,7 +41,7 @@ The data for this project was obtained through the Missouri Department of Educat
 
 ### Other considerations
 
-📙 Several schools report 100% of students qualify for Free and Reduced Lunch
+📕 Several schools report 100% of students qualify for Free and Reduced Lunch
 
   - schools can qualify 100% if a high enough proportion of students are direct certified
   - link to eligibility guidelines: https://dese.mo.gov/financial-admin-services/food-nutrition-services/community-eligibility-provisiocep
@@ -51,8 +51,6 @@ The data for this project was obtained through the Missouri Department of Educat
 📒 Low-enrollment schools did not have enough students to compute state standardized metrics are also not considered
 
 📓 Social Studies and History subjects are not accounted for as much as ELA, Math, and Science
-
-   ✅ Potential explanation: school capacity
    
    - some high schools only offer social studies subjects such as government every other year
    - this could impact the way these subjects are reported in my sample
