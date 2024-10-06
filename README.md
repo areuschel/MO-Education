@@ -80,8 +80,8 @@ I decided that I would rather keep the student group columns and sacrifice some 
 
 
 ### Description of Variables: Cleaned Dataset
-![Desc](/var_desc_1.png?raw=true "Vars")
-![Desc](/var_desc_2.png?raw=true "Vars")
+
+![Desc](/var_desc.JPEG?raw=true "Vars")
 
 
 
