@@ -210,7 +210,7 @@ One of my original questions about student performance among Missouri high schoo
 
 #### Full Model
 
-- Student performance, measured by test and growth scores, and attendance metrics account for most variation in this dataset.
+- Student performance, measured by test and growth scores, and attendance metrics account for most variation in this dataset. The plots below show key differences between schools with high and low % of students qualifying for FRL.
 
 #### High and Low % (Free & Reduced Lunch)
 
