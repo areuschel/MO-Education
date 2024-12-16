@@ -208,9 +208,19 @@ One of my original questions about student performance among Missouri high schoo
 
 ### Interpretations
 
+#### Full Model
+
+- Student performance, measured by test and growth scores, and attendance metrics account for most variation in this dataset.
+
+#### High and Low % (Free & Reduced Lunch)
+
 ![scree](/biplot_comparison.png?raw=true "PCA")
 
-![scree](/pca_interpretations.png?raw=true "PCA")
+- Higher proportion of variance explained in 4 PCs for low % group
+   - The variables in this dataset do well to explain variance for a higher income population
+   - I interpret this to mean that lower-income schools experience other factors that may influence student performance not captured in this dataset
+- Attendance metrics contribute more to PCs for the high % group
+   - High variance in testing attendance could be explained further through additional socioeconomic variables such as mode/access to transportation
 
 # Future work and considerations
 ![beauty](/even_mo_nature.jpg?raw=true "Clean")
