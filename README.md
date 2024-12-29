@@ -1,5 +1,5 @@
 # MO-Education
-![missouri](/mo_nature.jpg?raw=true "Clean")
+![missouri](/Photos/mo_nature.jpg?raw=true "Clean")
 
 Multivariate analysis of Missouri High Schools using Principal Components Analysis
 
@@ -26,7 +26,7 @@ The data for this project was obtained through the Missouri Department of Educat
 1. Narrow focus of analysis to only 4-year high schools
 2. Inspect count of null values & variable name
    
-![Cleaning1](/preprocess_01.jpg?raw=true "Clean")
+![Cleaning1](/Plots/preprocess_01.jpg?raw=true "Clean")
 
   
 ✂️ I decided to remove individual schools with 8 or more total null values.
@@ -35,7 +35,7 @@ The data for this project was obtained through the Missouri Department of Educat
 
 #### A new look at the remaining null values
      
-![Nulls](/preprocess_02.jpg?raw=true "Nulls")
+![Nulls](/Plots/preprocess_02.jpg?raw=true "Nulls")
 
 
 
@@ -81,7 +81,7 @@ I decided that I would rather keep the student group columns and sacrifice some 
 
 ### Description of Variables: Cleaned Dataset
 
-![Desc](/var_desc.JPEG?raw=true "Vars")
+![Desc](/Plots/var_desc.JPEG?raw=true "Vars")
 
 
 
@@ -98,18 +98,18 @@ The first thing I wanted to try with my data was MANOVA. I created groups for co
 
 Royston's Test for Multivariate Normality
      
-![Norm](/mvn_normality_roy.png?raw=true "Test")
+![Norm](/Plots/mvn_normality_roy.png?raw=true "Test")
 
 Anderson-Darling's Test for Univariate Normality
 
-![Norm](/univariate_normality_anderson.png?raw=true "Test")
+![Norm](/Plots/univariate_normality_anderson.png?raw=true "Test")
    note: quadratic, square root, and log transformations were unsuccessful for all variables which failed the Anderson-Darling Test
 
 
 - <b>Absence of multicollinearity</b>
    - ❌✅
 
-![Cor](/cor_heatmap_1.png?raw=true "Heatmap")
+![Cor](/Plots/cor_heatmap_1.png?raw=true "Heatmap")
 
 #### Moving on
 
@@ -128,14 +128,14 @@ With both normality and multicollinearity violations, I decided not to move forw
 - <b>No significant outliers</b>
    - ❌✅
  
-![MVN](/mvn_outliers.png?raw=true "Mahalanobis")
+![MVN](/Plots/mvn_outliers.png?raw=true "Mahalanobis")
 note: only five of these appear to be extreme outliers (8, 300, 221, 146, 132) and that is not a horrible violation of this assumption;
 moving forward each method will be tested with and without these 5 schools to see if their removal is essential to interpretation
 
 
 ### Full Model
 
-![scree](/full_mod.JPEG?raw=true "PCA")
+![scree](/Plots/full_mod.JPEG?raw=true "PCA")
 
 1. Number of principal componenets = 4
 
@@ -165,7 +165,7 @@ One of my original questions about student performance among Missouri high schoo
 
 ### PCA, <50% qualifying for FRL (💰 higher income)
 
-![scree](/FRL_low.JPEG?raw=true "PCA")
+![scree](/Plots/FRL_low.JPEG?raw=true "PCA")
 
 1. Number of principal components = 4
 
@@ -187,7 +187,7 @@ One of my original questions about student performance among Missouri high schoo
 
 ### PCA, >50% qualifying for FRL (💰 lower income)
 
-![scree](/FRL_high.JPEG?raw=true "PCA")
+![scree](/Plots/FRL_high.JPEG?raw=true "PCA")
 
 1. Number of principal components = 4
 
@@ -214,7 +214,7 @@ One of my original questions about student performance among Missouri high schoo
 
 #### High and Low % (Free & Reduced Lunch)
 
-![scree](/biplot_comparison.png?raw=true "PCA")
+![scree](/Plots/biplot_comparison.png?raw=true "PCA")
 
 - Higher proportion of variance explained in 4 PCs for low % group
    - The variables in this dataset do well to explain variance for a higher income population
@@ -223,7 +223,7 @@ One of my original questions about student performance among Missouri high schoo
    - High variance in testing attendance could be explained further through additional socioeconomic variables such as mode/access to transportation
 
 # Future work and considerations
-![beauty](/even_mo_nature.jpg?raw=true "Clean")
+![beauty](/Photos/even_mo_nature.jpg?raw=true "Clean")
 
 
 - Canonical Correlation Analysis
